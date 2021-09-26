@@ -1,0 +1,193 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    overflow: hidden;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+.benner-1,.benner-2,.benner-3,.benner-4 {
+    width:100%;
+    height: 100vh;
+    position: absolute;
+    left: 0;
+    top: 0;
+}
+span{
+    position: absolute;
+    left: 0;
+    top: 45px;
+    width: 30%;
+    height: 4px;
+   background-color: red;
+   margin-bottom:4rem ;
+}
+img{
+    width: 120%;
+    height: 120vh;
+    position:absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%,-50%);
+    animation: zoomOut 3s linear infinite ;
+}
+@keyframes zoomOut{
+    100%{
+        width: 100%;
+        height: 100vh;
+    }
+} 
+.contents
+{
+    width: 70%;
+    position: absolute;
+    top: 50%;
+    left: 10%;
+    animation: down 12s linear infinite;
+    transform: translateY(100%);
+
+}
+@keyframes down{
+    10%{
+        transform: translateY(0px);
+    }
+    100%{
+        transform: translateY(0px);
+    }
+}
+.contents h2{
+    margin-bottom:3rem ;
+    font-size: 25px;
+    font-weight: 600;
+    line-height: 1.5;
+    color: rgb(48, 11, 117);
+    letter-spacing: .3px;
+}
+.contents p{
+    color: white;
+    font-size: 14px;
+    line-height: 1.6;
+    
+}
+.benner-1{
+    animation: slide1 12s linear infinite;
+
+}
+.benner-2{
+    animation: slide2 12s linear infinite;
+
+}
+.benner-3{
+    animation: slide3 12s linear infinite;
+
+}
+.benner-4{
+    animation: slide4 12s linear infinite;
+
+}
+@keyframes slide1{
+    0%{
+        visibility: visible;
+    }
+    25%{
+        visibility: hidden;
+    }
+    50%{
+        visibility: hidden;
+        
+    }
+      75%{
+        visibility: hidden;     
+    }
+    100%{
+        visibility:visible;
+    }
+}
+@keyframes slide2{
+    0%{
+        visibility: hidden;
+    }
+    25%{
+        visibility: hidden;
+    }
+    50%{
+        visibility: visible;
+        
+    }
+    75%{
+        visibility: hidden;
+    }
+    100%{
+        visibility: hidden;
+    }
+}
+@keyframes slide3{
+    0%{
+        visibility: hidden;
+    }
+    25%{
+        visibility: hidden;
+    }
+    50%{
+        visibility: hidden;
+        
+    }
+    75%{
+        visibility: visible;
+    }
+    100%{
+        visibility:hidden;
+    }
+}
+@keyframes slide4{
+    0%{
+        visibility:hidden;
+    }
+    25%{
+        visibility: hidden;
+    }
+    50%{
+        visibility: hidden;
+        
+    }
+    75%{
+        visibility: hidden;
+    }
+    100%{
+        visibility: visible;
+    }
+}
+
+  .text-1{
+    animation-delay:0s ;
+  }
+  .text-2{
+    animation-delay:3s ;
+  }
+    .text-3{
+     animation-delay:6s ;
+  }
+  .text-4{
+     animation-delay:10s ;
+  }
+  .text-1 h2{
+      color: rgb(172, 39, 94);
+    }
+    .text-2 h2{
+        color: black;
+    }
+    .text-3 h2{
+        color: rgb(17, 93, 122);
+    }
+  .text-4 h2{    
+        color: aqua;
+  }
+  .text-1 span{
+      background-color: rgb(226, 92, 141) ;
+      width: 25%;
+  }
+
+
+
+
